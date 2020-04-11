@@ -12,46 +12,18 @@ import java.util.Scanner;
 public class Project {
 
 	public static void main(String[] args)  {
-		// TODO Auto-generated method stub
+	
+		int[][] data = {
+				{4, 6, 3, 10},
+				{4, 2, 40, 1},
+				{5, 34, 1, 43}
+		};
+
 		
-		
-		/* Scanner in = new Scanner(new File("students.txt"));
-		
-		
-		
-			List<String> students = new ArrayList<String>();
-			while(in.hasNextLine()) {
-				
-				students.add(in.nextLine());
-			}
-			for(int i=0; i < students.size(); i++) {
-				
-				System.out.println("name: " + students.get(i));
-				
-		in.close();
-		
-		*/
-		
-		LinkedList<String> names = new LinkedList<String>();
-		
-		names.push("Caled");
-		names.push("Sue");
-		names.push("Saly");
-		
-		ListIterator<String> it = names.listIterator();
-		it.hasNext();
-		it.next();
-		it.next();
-		it.add("Susan");
-		
-		
-		/*while(it.hasNext()) {
-			System.out.println(it.next());
-		}
-		
-		}*/
-		for(String s: names) {
-			System.out.println(s);
+		for(int i = 0; i < data.length; i++ ) {
+			for(int j = 0; j < data[i].length; j++ )
+			System.out.print(data[i][j] + " ");
+			
 		}
 	}
 		
